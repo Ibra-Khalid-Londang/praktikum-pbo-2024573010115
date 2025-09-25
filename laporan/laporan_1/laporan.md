@@ -188,8 +188,6 @@ Gejala: Ketika mengetik java -version di command line, muncul pesan error "java 
 Solusi Windows:
 Restart Command Prompt setelah setup Environment Variables. Jika masih tidak berfungsi, pastikan PATH sudah diset dengan benar dan tidak ada typo dalam penulisan path.
 
-Solusi macOS/Linux:
-Jalankan source ~/.bashrc atau restart terminal. Pastikan JDK terinstall di lokasi yang benar.
 
 #### Problem 2: IntelliJ IDEA tidak detect JDK
 Gejala: Saat membuat project baru, tidak ada pilihan JDK atau muncul pesan "No SDK"
