@@ -1,4 +1,3 @@
-# Laporan Modul 1: Perkenalan Java dan Ekosistemnya
 **Mata Kuliah:** Praktikum Pemrograman Berorientasi Objek   
 **Nama:** [Ibra Khalid Londang]  
 **NIM:** [2024573010115]  
