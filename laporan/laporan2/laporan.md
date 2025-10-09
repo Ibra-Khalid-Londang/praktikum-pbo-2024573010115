@@ -926,6 +926,6 @@ Berikut adalah poin-poin utama yang dapat disimpulkan:
 ---
 
 ## 5. Referensi
-Petani Kode: https://www.petanikode.com/java-oop
+Petani Kode: https://www.petanikode.com/java-oop         
 we3schools: https://www.w3schools.com/java/java_oop.asp
 ---
