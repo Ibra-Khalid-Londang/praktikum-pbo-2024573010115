@@ -1,21 +1,21 @@
 package modul_4;
 
-public class kartuRencanaStudi {
-    private mahasiswa mahasiswa;
-    private mataKuliah[] daftarMatakuliah;
+public class KartuRencanaStudi {
+    private Mahasiswa mahasiswa;
+    private MataKuliah[] daftarMatakuliah;
     private int jumlahMatkul;
     private int maxMatkul;
     private final int MAX_SKS = 24; // BARU: Batas maksimal SKS
 
-    public kartuRencanaStudi(mahasiswa mahasiswa, int maxMatkul) {
+    public KartuRencanaStudi(Mahasiswa mahasiswa, int maxMatkul) {
         this.mahasiswa = mahasiswa;
         this.maxMatkul = maxMatkul;
-        this.daftarMatakuliah = new mataKuliah[maxMatkul];
+        this.daftarMatakuliah = new MataKuliah[maxMatkul];
         this.jumlahMatkul = 0;
     }
 
     // MODIFIKASI: Tambah validasi SKS
-    public boolean tambahMatakuliah(mataKuliah matkul) {
+    public boolean tambahMatakuliah(MataKuliah matkul) {
         if (jumlahMatkul >= maxMatkul) {
             System.out.println("\nNote: KRS sudah penuh! Maksimal " + maxMatkul + " mata kuliah.");
             return false;
@@ -69,8 +69,8 @@ public class kartuRencanaStudi {
             return;
         }
 
-        mataKuliah terbaik = daftarMatakuliah[0];
-        mataKuliah terburuk = daftarMatakuliah[0];
+        MataKuliah terbaik = daftarMatakuliah[0];
+        MataKuliah terburuk = daftarMatakuliah[0];
 
         for (int i = 1; i < jumlahMatkul; i++) {
             if (daftarMatakuliah[i].getnilai() > terbaik.getnilai()) {
@@ -102,7 +102,7 @@ public class kartuRencanaStudi {
         double totalBobot = 0.0;
         int totalSKS = 0;
         for (int i = 0; i < jumlahMatkul; i++) {
-            mataKuliah mk = daftarMatakuliah[i];
+            MataKuliah mk = daftarMatakuliah[i];
             totalBobot += mk.getBobotNilai() * mk.getSks();
             totalSKS += mk.getSks();
         }
@@ -135,7 +135,7 @@ public class kartuRencanaStudi {
         System.out.println("==================================================================");
     }
 
-    public mataKuliah cariMatakuliahByKode(String kode) {
+    public MataKuliah cariMatakuliahByKode(String kode) {
         for (int i = 0; i < jumlahMatkul; i++) {
             if (daftarMatakuliah[i].getKode().equalsIgnoreCase(kode)) {
                 return daftarMatakuliah[i];

@@ -536,7 +536,7 @@ case 6: // Sebelumnya case 4
 
 ### 4. Output:
 ````declarative
-"C:\Program Files\Amazon Corretto\jdk11.0.28_6\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.1\lib\idea_rt.jar=62440" -Dfile.encoding=UTF-8 -classpath C:\java-pbo\praktikum-pbo-2024573010115\out\production\praktikum-pbo-2024573010115 modul_4.main
+"C:\Program Files\Amazon Corretto\jdk11.0.28_6\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.1\lib\idea_rt.jar=62440" -Dfile.encoding=UTF-8 -classpath C:\java-pbo\praktikum-pbo-2024573010115\out\production\praktikum-pbo-2024573010115 modul_4.Main
 ------------------------------------------------------------------
                  SISTEM KARTU RENCANA STUDI (KRS)                 
 ------------------------------------------------------------------

@@ -2,7 +2,7 @@ package modul_4;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("------------------------------------------------------------------");
@@ -18,8 +18,8 @@ public class main {
         System.out.print("Jurusan: ");
         String jurusan = input.nextLine();
 
-        mahasiswa mhs = new mahasiswa(nama, nim, jurusan, 0.0);
-        kartuRencanaStudi krs = new kartuRencanaStudi(mhs, 10);
+        Mahasiswa mhs = new Mahasiswa(nama, nim, jurusan, 0.0);
+        KartuRencanaStudi krs = new KartuRencanaStudi(mhs, 10);
         boolean running = true;
 
         while (running) {
@@ -61,7 +61,7 @@ public class main {
                         break;
                     }
                     input.nextLine();
-                    mataKuliah mk = new mataKuliah(kode, namaMK, sks);
+                    MataKuliah mk = new MataKuliah(kode, namaMK, sks);
                     krs.tambahMatakuliah(mk);
                     break;
 
@@ -76,7 +76,7 @@ public class main {
                     System.out.println("\n--- INPUT NILAI ---");
                     System.out.print("Kode Mata Kuliah: ");
                     String kodeCari = input.nextLine();
-                    mataKuliah mkCari = krs.cariMatakuliahByKode(kodeCari);
+                    MataKuliah mkCari = krs.cariMatakuliahByKode(kodeCari);
                     if (mkCari != null) {
                         System.out.print("Input Nilai (0-100): ");
                         double nilaiInput;

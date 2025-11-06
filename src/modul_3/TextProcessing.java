@@ -16,7 +16,7 @@ public class TextProcessing {
 
         if (dataMahasiswa.length > 0 && !dataMahasiswa[0].isEmpty()) {
             System.out.println("\n=== ANALISIS DATA ===");
-            System.out.println("Jumlah mahasiswa: " + dataMahasiswa.length);
+            System.out.println("Jumlah Mahasiswa: " + dataMahasiswa.length);
 
             String namaTerpanjang = dataMahasiswa[0];
             String namaTerpendek = dataMahasiswa[0];

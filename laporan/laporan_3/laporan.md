@@ -337,7 +337,7 @@ public class TextProcessing {
 
         // Analisis data
         System.out.println("\n=== ANALISIS DATA ===");
-        System.out.println("Jumlah mahasiswa: " + dataMahasiswa.length);
+        System.out.println("Jumlah Mahasiswa: " + dataMahasiswa.length);
 
         // Mencari nama terpanjang dan terpendek
         String namaTerpanjang = dataMahasiswa[0];

@@ -3,7 +3,7 @@ public class ArraySatuD {
     public static void main(String[] args) {
         // Langkah 1: Deklarasi dan inisialisasi array
         int[] nilai = {85, 90, 78, 92, 88};
-        String[] nama = {"Alice", "Bob", "Charlie", "Diana", "Eva"};
+        String[] nama = {"Ibra", "Fathan", "Lutfi", "Muna", "Dila"};
 
         // Langkah 2: Menampilkan panjang array
         System.out.println("Jumlah siswa: " + nilai.length);
